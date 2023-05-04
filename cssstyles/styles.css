@@ -1,0 +1,835 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: black;
+   text-decoration: none;
+   list-style: none;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+body {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(246, 246, 246, 1) 100%);
+}
+
+/*HEADER MOBILE*/
+.header {
+  width: 100%;
+  padding-top: 10px;
+  background-image: url(./assets/1imagenPortada.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 5px rgb(114, 114, 114);
+}
+
+.logo{
+  display: flex;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo__textlogo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.header img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header__title a{   
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 15px #fff;
+  font-size: 25px;
+  font-weight: 600;}
+
+.header__list{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__navbuttons a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  text-shadow: 0px 0px 5px #f6f6f6;
+}
+
+.header__navbuttons a:hover{
+  transition: 1s;
+  background-color: rgba(195, 195, 195, 0.478);
+  border-radius: 5px;
+}
+
+.header__navbuttons__con {
+  display: none;
+}
+
+/*COVER MOBILE*/
+.cover {
+  display: none;
+}
+
+
+/*ARTICLES MOBILE*/
+
+.article__products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.article__remeras {
+  display: flex;
+  background-image: url(./assets/remera-1.jfif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 200px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.article__remeras :hover{
+  transition: 1s;
+  background-color: white;
+}
+
+.article__pantalones {
+  display: flex;
+  background-image: url(./assets/pantalon-ombu.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 200px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.article__pantalones :hover{
+  transition: 1s;
+  background-color: white;
+}
+
+.article__accesorios {
+  display: flex;
+  background-image: url(./assets/1accesoriosPortada.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 200px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.article__accesorios :hover{
+  transition: 1s;
+  background-color: white;
+}
+
+.article__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.494);
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px #f6f6f6;
+}
+
+.article__text a {
+  text-decoration: none;
+  color: black;
+}
+
+/*SOCIAL NETWORKS MOBILE*/
+.socialNetworks {
+  height: 30px;
+  background-color: rgb(84, 119, 255);
+  margin-top: 10px;
+}
+
+.socialNetworks__conteiner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.socialNetworks a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.socialNetworks__conteiner a:hover{
+  transition: 1s;
+  background-color: rgba(23, 42, 42, 0.57);
+  border-radius: 5px;
+  transform: scale(1,1.2);
+}
+
+/*FOOTER MOBILE*/
+.footer {
+  background-color: black;
+  height: auto;
+  width: 100%;
+}
+
+.footer__list {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__list a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__avisoslegales {
+  color: white
+}
+
+.footer__textoLegales {
+  font-size: 12px;
+  font-weight: 100;
+  color: white;}
+
+
+
+/*PAGE 2 and 3!!!! SHIRTS and PANTS MOBILE*/
+.shirts {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.shirts :hover{
+  transition: 1s;
+  background-color: rgba(183, 183, 183, 0.553);
+}
+
+.article__shirts {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 260px;
+  width: 40%;
+  background-color: #f6f6f6;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.article__shirts img {
+  object-fit: cover;
+  object-position: center;
+  height: 75%;
+  width: 85%;
+}
+
+.article__shirts h3{
+  font-size: medium;
+}
+
+.article__shirts a{
+  text-decoration: none;
+}
+
+.article__shirts p {
+  font-size: small;
+}
+
+.botonShowroom {
+  display: none
+}
+
+
+
+/*PAGE 4 and 5!!!! SHOWROOM and CONTACT MOBILE*/
+
+.conteiner__maps {
+  height: 450px;
+  width: 90%;
+  margin: 20px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.anchoMapa {
+  width: 100%;
+}
+
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.contacto__form {
+  width: 80%;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 5px 2px rgb(150, 150, 150);
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto__label {
+  display: block;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+input{
+  display: flex;
+  margin: 0 auto;
+}
+textarea {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+
+/*PAGE 6 REMERA NEGRA MOBILE*/
+.texto__RemeraNegra {
+  display: flex;
+  align-content: center;
+  width: fit-content;
+  padding: 5px;
+  margin: 10px;
+  height: 32px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+}
+
+.texto__RemeraNegra :hover {
+  transition: 0.5s;
+  transform: scale(1.05,1.05);
+}
+
+.texto__RemeraNegra h2 {
+  font-weight: 100;
+  font-size:large;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 2fr 1fr 1fr;
+  height: 60vh;
+  gap: 10px;
+  margin: 10px;
+}
+
+.slider-conteiner {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  }
+
+
+.slider-conteiner img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  height: 100%;
+  max-height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.conteiner__botones {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  width: fit-content;
+  justify-content: center;
+}
+
+.boton__showroom {
+  background-color: rgb(239, 0, 0);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+}
+
+.boton__compras {
+  background-color: rgb(239, 0, 0);
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+}
+
+.guiatalles {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.guiatalles__table{
+  border-color: black;
+  border-width: 2px;
+  text-align: start;
+  font-size: xx-small;
+  font-weight: 100;
+}
+
+.guiatalles__table td, th{
+  border-color: black;
+  border-width: 1px;
+}
+
+.pulmon {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+
+/*PAGE 7 PANTS MOBILE  --  Esta página se hace deliberadamente con un carousel de bootstrap para jugar con diferentes posibilidades*/
+
+.carouselboot__conteiner {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  display: flex;
+  overflow: hidden;
+}
+
+.carouselboot__conteiner img {
+  width:100%;
+  object-fit: cover;
+  object-position:center;
+}
+
+
+
+/*HEADER TABLET AND LAPTOP*/
+@media screen and (min-width: 420px) {
+
+.header {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 123, 123, 1) 66%, rgba(246, 246, 246, 1) 93%);
+  height: auto;
+  padding-bottom: 7px;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header__title {
+  font-size: 35px;
+  margin-left: 25px;
+  text-shadow: none;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header__list{
+  width: 80%;
+  padding-left: 5px;
+}
+
+.header__navbuttons {
+  display: inline-flex;
+  font-weight: 600;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.494);
+  height: 30px;
+  width: 18vw;
+  min-width: fit-content;
+  max-width: 140px;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: none;
+}
+
+.header__navbuttons__con {
+  font-weight: 600;
+  display: inline-flex;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.494);
+  height: 30px;
+  width: 18vw;
+  max-width: 140px;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__navbuttons__con a{
+  text-decoration: none;
+  color: black;
+}
+
+.header__list :hover{
+  transition: 1s;
+  background-color: aliceblue;
+}
+
+.header__navbuttons a:hover{
+  background-color: unset;
+}
+
+.header__navbuttons__con a:hover {
+  background-color:unset;
+}
+
+
+/*COVER TABLET*/
+.cover__conteiner {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 25vh;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  background-image: url("./assets/1imagenPortada.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cover__text {
+  color: white;
+  text-shadow: black 0px 0px 5px;
+  font-size: 30px;
+  width: 75%;
+  padding: 20px;
+}
+
+
+/*ARTICLES TABLET*/
+.article__products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.article__remeras {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 45vh;
+  min-height: 300px;
+  max-height: 400px;
+  width: 40vw;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/remera-1.jfif");
+  background-size: cover;
+  background-position: center;
+}
+
+.article__pantalones {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 45vh;
+  min-height: 300px;
+  max-height: 400px;
+  width: 40vw;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/pantalon-ombu.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.article__accesorios {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 45vh;
+  min-height: 300px;
+  max-height: 400px;
+  width: 40vw;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/1accesoriosPortada.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.article__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.494);
+  font-size: larger;
+  font-weight: 600;
+}
+
+
+/*SOCIAL NETWORKS TABLET*/
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: rgb(84, 119, 255);
+}
+
+.socialNetworks__conteiner{
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialNetworks__list {
+font-weight: 400;
+margin: 5px;
+}
+
+.socialNetwoks a {
+  color: black;
+}
+
+
+/*FOOTER TABLET*/
+.footer {
+background-color: black;
+height: auto;
+padding: 15px;
+color: #f6f6f6;
+}
+
+.footer__list {
+font-size: 14px;
+font-weight: 400;
+}
+
+.footer__list a {
+color: #f6f6f6;
+}
+
+.textoLegales {
+font-size: 12px;
+font-weight: 100;
+}
+
+
+/*PAGE 2 ARTICLES SHIRTS TABLET*/
+.shirts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.article__shirts {
+  display: flex;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  height: 45vh;
+  width: 40vw;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  max-width: 320px;
+  background-color: #f6f6f6;
+  margin: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.article__shirts img {
+  object-fit: cover;
+  object-position: center;
+  height: 75%;
+  width: 85%;
+}
+
+.botonShowroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(239, 0, 0);
+  height: 35px;
+  min-width: 150px;
+  width: 20vw;
+  max-width: 180px;
+  font-size: 20px;
+  margin: 15px;
+  border-radius: 15px;
+box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+}
+
+.botonShowroom a {
+  color: black;
+}
+
+
+
+/*PAGE 6 REMERA NEGRA TABLET*/
+
+.superconteiner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: 60% 5% auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 60vh;
+  gap: 10px;
+  margin: 10px;
+}
+
+.slider-conteiner {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+
+.slider-conteiner img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  height: 100%;
+  max-height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.conteiner__botones {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  width: fit-content;
+  justify-content: center;
+}
+
+.boton__showroom {
+  background-color: rgb(239, 0, 0);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+}
+
+.boton__compras {
+  background-color: rgb(239, 0, 0);
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+}
+
+.guiatalles {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  grid-column: 3/4;
+  grid-row: 1/3;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  }
+
+
+/*FORMULARIO CONTACTO TABLET Y DESKTOP*/
+.contacto__form {
+  width: 80%;
+  max-width: 400px;
+}
+}
+
+
+/*PAGE 6 REMERA NEGRA DESKTOP*/
+@media screen and (min-width: 800px) {
+  .conteiner {
+  width: 65%;
+}
+}
